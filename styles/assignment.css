@@ -13,6 +13,28 @@
 .display-flex{
     display: flex;
 }
+.display-flex1{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.btn-arrow{
+    width: 40px;
+    height: 40px;
+    font-size: 2rem;
+    background-color: orange;
+    color: white;
+    border-radius: 50%;
+    border: none;
+}
+.arrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    gap: 10px;
+
+}
+
 .color-title{
     color: orange;
 }
@@ -50,6 +72,7 @@
 .main-nav{
     margin-right: 200px;
 }
+
 .btn-primary{
     width: 110px;
     height: 30px;
@@ -62,7 +85,6 @@
 .section-head{
     font-size: 2.85rem;
     font-weight: bold;
-    /* width: 100%; */
 }
 .section-container{
     justify-content: space-between;
@@ -85,7 +107,7 @@
     margin-bottom:20px ;
 }
 .kids-profile-pic{
-    margin-right: 10px;
+    margin-right: 30px;
     max-width: 560px;
     width: 100%;
 }
@@ -107,8 +129,6 @@
     height: 400px;
     border-radius: 18px;
     margin-top: 70px;
-    /* margin-right: 50px;
-    margin-left: 100px; */
 }
 .kids-text{
     font-weight: 800;
@@ -126,12 +146,7 @@
     display: flex;
     gap: 30px;
     justify-content: center;
-
-    /* padding-left: 80px;
-    padding-right:80px ; */
 }
-.kids-title
-
 .hide{
     display: none;
 }
@@ -147,13 +162,17 @@
   }
 
 
-/* responsive media query */
+/* responsive media query for mobile device */
 @media screen and (max-width:576px){
     header, .navbar, .nav-links, .section-container, .kids-container{
         flex-direction: column;
         display:grid ;
         grid-template-columns:repeat(1fr) ;
     }
+    .arrow{
+        display: none;
+    }
+
     .icon-bar{
         display: block;
         position: absolute;
@@ -169,7 +188,7 @@
         display: block;
     }
     .kids-title{
-        box-shadow: 4px 4px 8px grey;
+        box-shadow: 4px 4px 8px #FFF4DC;
         display: flex;
         text-align: center;
         align-items: center;
@@ -187,37 +206,28 @@
     .section-container{
         margin-left: 70px;
         margin-right: 30px;
-    }
-    /* #kids-title{
-        box-shadow: 4px 4px 8px grey;
-    } */
-    .kids-profile-pic{
-        /* position: absolute; */
-        /* margin-right: 10px;
-        max-width: 560px;
-        width: 100%; */
-    }
+    }  
     .banner-title{
-        /* position: absolute; */
-        /* margin-top: 700px; */
-        /* max-width: 640px;
-        margin-top: 90px ; */
+        margin-top: 10px ; 
+        padding-left: 10px;
+        padding-right: 10px;
+    } 
+    .description-title{
+        
     }
-    .section-text{
-        /* margin-top: 500px;
-        position: absolute; */
+    .kids-container{
+        margin-left: 40px;
+        margin-right: 0px;
+    }
+    .text-heading{
+        
+        margin-left: 50px;
+    }
+    .kids-description{
+        
     }
 }
 
-/* .section-container {
-    display: flex;
-    flex-direction: column; 
-    align-items: center;    
-    text-align: center;     
-    gap: 20px;         
-  } */
-  
-  
   .kids-profile-pic {
     order: -1;
 }
@@ -225,7 +235,4 @@
   .banner-title {
     order: 1;
   }
-  /* .banner-title{
-    
-    margin-top: -20px ;
-} */ 
+  
