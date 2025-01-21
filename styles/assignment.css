@@ -1,0 +1,97 @@
+
+
+.quicksand-normal {
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* header section style */
+/* shared style */
+.display-flex{
+    display: flex;
+}
+.color-title{
+    color: orange;
+}
+.color-title-2{
+    color: skyblue;
+}
+.nav-title{
+    margin-right: 10px;
+}
+.nav-item{
+    list-style: none;
+}
+.nav-source{
+    text-decoration: none;
+    margin-right: 30px;
+}
+.header{
+    justify-content: center;
+}
+.heading-1{
+    margin-right: 150px;
+}
+.main-nav{
+    margin-right: 200px;
+}
+.btn-primary{
+    width: 110px;
+    height: 30px;
+    border-radius: 8px;
+    background-color: orange;
+    color: white;
+    border: none;
+}
+/* main section style */
+.section-head{
+    font-size: 2.85rem;
+    font-weight: bold;
+    /* width: 100%; */
+}
+.section-container{
+    justify-content: space-between;
+    margin-left: 130px;
+    margin-right: 80px;
+    
+}
+.description-title{
+    font-size: 1rem;
+    color: black;
+    font-weight: 400;
+}
+.btn-container{
+    width: 130px;
+    height: 35px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    margin-bottom:20px ;
+}
+.kids-profile-pic{
+    margin-right: 10px;
+    max-width: 560px;
+    width: 100%;
+}
+.banner-title{
+    max-width: 640px;
+    margin-top: 90px ;
+}
+
+.hide{
+    display: none;
+}
+
+
+/* responsive media query */
+@media screen and (max-width:576px){
+    header, .navbar, .nav-links, .section-container{
+        flex-direction: column;
+    }
+    .section-container{
+        flex-direction: column-reverse;
+    }
+}
